@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Form Validation</title>
+</head>
+<body>
+  <form id="container">
+    <div class="header">
+      <h2>Create Account</h2>
+    </div>
+    
+    <div class="input-group">
+      <label for="username">Username</label>
+      <input id="txtUserName" type="text" placeholder="ex. HDub1467" name="username">
+      <i class="fas fa-check-circle"></i>
+      <i class="fas fa-exclamation-circle"></i>
+      <small>Error Message</small>
+    </div>
+
+    <div class="input-group">
+      <label for="email">Email</label>
+      <input id="txtEmail" type="email" placeholder="ex. H0712Dub@gmail.com" name="email">
+      <i class="fas fa-check-circle"></i>
+      <i class="fas fa-exclamation-circle"></i>
+      <small>Error Message</small>
+    </div>
+
+    <div class="input-group">
+      <label for="password">Password</label>
+      <input id="txtPassword" type="password" placeholder="Password" name="password">
+      <i class="fas fa-check-circle"></i>
+      <i class="fas fa-exclamation-circle"></i>
+      <small>Error Message</small>
+    </div>
+
+    <div class="input-group">
+      <label for="verPassword">Verify Password</label>
+      <input id="txtVerPassword" type="password" placeholder="Verify Password" name="password">
+      <i class="fas fa-check-circle"></i>
+      <i class="fas fa-exclamation-circle"></i>
+      <small>Error Message</small>
+    </div>
+
+    <button type="submit" class="btn">Submit</button>
+  </form>
+
+  <script src="validation.js"></script>
+</body>
+</html>
